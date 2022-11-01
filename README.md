@@ -6,13 +6,13 @@ To install this application, simply enter the below in the terminal window
 ```
 git clone https://github.com/israa-junaid/payment-reminder.git
 ```
-To install the client side dependancies, enter the follwiing in your terminal:
+To install the client side dependancies, enter the following in your terminal:
 ```
 cd your-project
 cd client
 npm install
 ```
-To install the server side dependancies, enter the follwiing in your terminal:
+To install the server side dependancies, enter the following in your terminal:
 ```
 cd server
 npm install
@@ -24,7 +24,7 @@ To start the app, make sure you're in the project directory. Type the following 
 ```
 npm run dev
 ```
-To start the react application, type the following command while being inside the client directory,
+To start the react application, type the following command while being inside the client directory to start the react application,
 ```
 npm start`
 ```
