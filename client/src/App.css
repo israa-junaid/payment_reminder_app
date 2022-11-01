@@ -1,0 +1,307 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+body {
+  --margin-xl: 4rem;
+  --margin-lg: 3rem;
+  --margin-md: 2rem;
+  --margin-sm: 1rem;
+  --margin-xs: 0.8rem;
+  --margin-xxs: 0.5rem;
+
+  --padding-xl: 4rem;
+  --padding-lg: 3rem;
+  --padding-md: 2rem;
+  --padding-sm: 1rem;
+  --padding-xs: 0.8rem;
+  --padding-xxs: 0.5rem;
+
+  font-family: "Poppins", sans-serif;
+  overflow: hidden;
+  background: rgb(223, 223, 223);
+}
+
+.App {
+  display: flex;
+}
+
+/* Disabling the annoying scroll feature on input number */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Disabling input file default text */
+/* input[type="file"] {
+  color: transparent;
+} */
+
+.black-hover:hover {
+  box-shadow: 0px 0px 5px 0.3px black;
+  cursor: pointer;
+}
+
+/* signin container */
+
+.signlogo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+
+  height: 100vh;
+}
+
+.content-container {
+  padding: 2rem 1rem;
+}
+
+/* For making sure empty p tags don't take up space */
+.pb:empty,
+p:empty {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+/* modal */
+.custom-modal {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 99;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-content {
+  background-color: white;
+  border-radius: 15px;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  animation: appear 350ms ease-in 1;
+}
+
+@keyframes appear {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+}
+
+.input-form {
+  border: 1px solid #00000054;
+  padding: 0.5rem 1rem;
+  border-radius: 0.3rem;
+  width: 100%;
+}
+
+.input-calendar {
+  border: 1px solid #cccccc;
+  padding: 10px;
+  font-size: 18px;
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* Voting form modal */
+.input-form-x {
+  border: 1px solid #00000054;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 1rem;
+  padding-right: 2rem;
+  border-radius: 0.3rem;
+}
+
+.red {
+  background: #de5151;
+  transition: 0.3s;
+}
+
+.red:hover {
+  box-shadow: 0px 0px 5px 0.3px #de5151;
+}
+
+.red-dark {
+  background: #8b4343;
+  transition: 0.3s;
+}
+
+.red-dark:hover {
+  box-shadow: 0px 0px 5px 0.3px #8b4343;
+}
+
+.green {
+  background: #72af3a;
+  transition: 0.3s;
+}
+
+.green:hover {
+  box-shadow: 0px 0px 5px 0.3px #72af3a;
+}
+
+.green-dark {
+  background: #72af3a;
+  transition: 0.3s;
+}
+
+.green-dark:hover {
+  box-shadow: 0px 0px 5px 0.3px #72af3a;
+}
+
+.grey {
+  background: #9f9f9f;
+  transition: 0.3s;
+}
+
+.grey:hover {
+  box-shadow: 0px 0px 5px 0.3px #9f9f9f;
+}
+
+/* MATERIAL TABLE ICON STYLES */
+.delete-icon {
+  background: #ff959538;
+  color: #ff9595;
+  transition: 0.3s;
+}
+
+.delete-icon:hover {
+  box-shadow: 0px 0px 6px 0.1px #ff9595;
+}
+
+.edit-icon {
+  background: #32a87538;
+  color: #32a875;
+  transition: 0.3s;
+}
+
+.edit-icon:hover {
+  box-shadow: 0px 0px 6px 0.1px #32a875;
+}
+
+.arrow-icon {
+  background: #65866438;
+  color: #658664;
+  transition: 0.3s;
+}
+
+.arrow-icon:hover {
+  box-shadow: 0px 0px 6px 0.1px #658664;
+}
+
+.re-enable-icon {
+  background: #00799e38;
+  color: #00799e;
+  transition: 0.3s;
+}
+
+.re-enable-icon:hover {
+  box-shadow: 0px 0px 6px 0.1px #00799e;
+}
+
+.navlink {
+  background: #459a0046;
+  padding: 0.6rem 1.4rem;
+  border-radius: 0.3rem;
+  border: 1px solid #469a00;
+  color: #469a00;
+}
+
+.inactive-navlink {
+  color: black;
+  padding: 0.6rem 1.4rem;
+}
+
+/* TABLE INSIDE A MODAL */
+
+#modalTable .MuiTableCell-root {
+  border-bottom: none !important;
+}
+
+#modalTable .MuiTableCell-head {
+  border: 1px solid rgb(172, 172, 172) !important;
+}
+
+.tableGrey {
+  background: rgba(243, 243, 243, 1);
+}
+
+/* FOR OVERIDING DATA TABLE STYLES */
+
+.MuiInput-underline:before {
+  left: 0;
+  right: 0;
+  bottom: 0;
+  content: "\00a0";
+  position: absolute;
+  transition: none !important;
+  border-bottom: none !important;
+  pointer-events: none;
+}
+
+.MuiIconButton-root:hover {
+  background: none !important;
+}
+
+.MTableHeader-header-13 {
+  z-index: 2 !important;
+}
+
+.MuiSelect-selectMenu {
+  border: 1px solid #cccccc !important;
+  padding: 10px !important;
+  border-radius: 3px !important;
+}
+
+.MuiTablePagination-select {
+  text-align: right !important;
+  border: none !important;
+  padding-left: 8px !important;
+  padding-right: 24px !important;
+  text-align-last: right;
+}
+
+.MuiInput-underline:after {
+  left: 0;
+  right: 0;
+  bottom: 0;
+  content: "\00a0";
+  position: absolute;
+  transition: none !important;
+  border-bottom: none !important;
+  pointer-events: none;
+}
+
+.MuiTableCell-root {
+  border-bottom: none !important;
+}
+
+.MuiTableCell-head {
+  border-bottom: 1px solid #cccccc !important;
+}
+
+/* Polling Progress Bar */
+.progress-bar-border {
+  border: 1px solid #7fc243;
+  border-radius: 9px;
+}
+
+.progress-bar {
+  background: #7fc243;
+  opacity: 0.6;
+  border-radius: 9px;
+}
+
+/* Changing autofill text color
+
+input:-webkit-autofill,
+input:-webkit-autofill:focus {
+  transition: background-color 600000s 0s, color 600000s 0s;
+} */
